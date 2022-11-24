@@ -19,13 +19,13 @@ function draw() {
     if(mouseX !== pmouseX && mouseY !== pmouseY) {
         points.shift();
 
-        let point = createVector(mousex, mouseY);
+        let point = createVector(mouseX, mouseY);
         points.push(point);
     }
 
     strokeWeight (5);
     strokeJoin(ROUND);
-    noFil1();
+    noFill();
 
     let c1 = color('rgb (255, 150,0)');
     let c2 = color('rgb (0, 150,255)');
